@@ -1,12 +1,5 @@
 <div id="top"></div>
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![CI/CD][cicd-shield]][cicd-url]
-
 <div align="center">
 <h3>CI/CD GitHub Action :rocket:</h3>
   <p>
@@ -44,19 +37,19 @@ publish the release.
    MYSQL_USER=myuser
    MYSQL_PASSWORD=mypw
    DOCKER_IMAGE_NAME=ci-cd
-   GITHUB_USER=mathiasreker" >~/.env
+   GITHUB_USER=ragha-netizen" >~/.env
    ```
 
    _`MYSQL_ROOT_PASSWORD`, `MYSQL_DATABASE`, `MYSQL_USER` and `MYSQL_PASSWORD` can be anything._
 
    _`DOCKER_IMAGE_NAME` must match the name of the docker image defined
-   in [workflow](https://github.com/MathiasReker/CI-CD/blob/develop/.github/workflows/ci-cd.yml)._
+   in [workflow](https://github.com/ragha-netizen/CICD_Java_app/blob/example1/.github/workflows/ci-cd.yml)._
 
    _`GITHUB_USER` must be the user/organisation of the repository in **lower case**._
 
 > _This script replaces step 3-6 (optional)_
 > ```sh
-> bash <(curl -s https://raw.githubusercontent.com/MathiasReker/Java-CI-CD/develop/install.bash)
+> bash <(curl -s https://github.com/ragha-netizen/CICD_Java_app/blob/example1/install.bash)
 > ```
 
 3. Install docker-compose
@@ -91,13 +84,13 @@ Add the following secrets:
 
 ### Install the workflow to your project
 
-1. Copy the [workflow](https://github.com/MathiasReker/CI-CD/blob/develop/.github/workflows/ci-cd.yml) to this path of
+1. Copy the [workflow](https://github.com/ragha-netizen/CICD_Java_app/blob/example1/.github/workflows/ci-cd.yml) to this path of
    your repository: `/.github/workflows/ci-cd.yml`.
 
-2. Copy the [docker-compose.yml](https://github.com/MathiasReker/CI-CD/blob/develop/docker-compose.yml) to the root
+2. Copy the [docker-compose.yml](https://github.com/ragha-netizen/CICD_Java_app/blob/example1/docker-compose.yml) to the root
    folder of your project.
 
-3. Copy the [Dockerfile](https://github.com/MathiasReker/CI-CD/blob/develop/Dockerfile) to the root folder of your
+3. Copy the [Dockerfile](https://github.com/ragha-netizen/CICD_Java_app/blob/example1/Dockerfile) to the root folder of your
    project.
 
 _Depending on your project, it is necessary to adapt the `docker-compose.yml` and the `Dockerfile`._
@@ -127,8 +120,7 @@ The CD pipeline is triggered on push events. The CD pipeline will be skipped if 
 - [x] Unit test
 - [x] Integration test using JPA
 
-See the [open issues](https://github.com/MathiasReker/CI-CD/issues) for a complete list of proposed features (and known
-issues).
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -138,33 +130,3 @@ If you have a suggestion to improve this, please fork the repo and create a pull
 with the tag "enhancement". Finally, don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-## License
-
-It is distributed under the MIT License. See `LICENSE` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-[contributors-shield]: https://img.shields.io/github/contributors/MathiasReker/CI-CD.svg
-
-[contributors-url]: https://github.com/MathiasReker/CI-CD/graphs/contributors
-
-[forks-shield]: https://img.shields.io/github/forks/MathiasReker/CI-CD.svg
-
-[forks-url]: https://github.com/MathiasReker/CI-CD/network/members
-
-[stars-shield]: https://img.shields.io/github/stars/MathiasReker/CI-CD.svg
-
-[stars-url]: https://github.com/MathiasReker/CI-CD/stargazers
-
-[issues-shield]: https://img.shields.io/github/issues/MathiasReker/CI-CD.svg
-
-[issues-url]: https://github.com/MathiasReker/CI-CD/issues
-
-[license-shield]: https://img.shields.io/github/license/MathiasReker/CI-CD.svg
-
-[license-url]: https://github.com/MathiasReker/CI-CD/blob/master/LICENSE.txt
-
-[cicd-shield]: https://github.com/MathiasReker/CI-CD/actions/workflows/ci-cd.yml/badge.svg?branch=develop
-
-[cicd-url]: https://github.com/MathiasReker/CI-CD/actions/workflows/ci-cd.yml
