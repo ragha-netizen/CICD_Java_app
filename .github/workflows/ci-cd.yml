@@ -3,7 +3,7 @@
 # You may wish to change the name of the IMAGE_NAME environment variable. This
 # variable is used to name the docker image.
 #
-# Author: Mathias Reker (https://github.com/MathiasReker).
+# Author: Ragha-netizen (https://github.com/ragha-netizen).
 
 name: CI/CD
 
